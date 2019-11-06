@@ -6,8 +6,6 @@
 #include <linux/spinlock.h> 	
 #include <linux/list.h>
 #include <linux/slab.h>
-#include <linux/semaphore.h>
-#include <linux/mutex.h>
      
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Madhuparna Bhowmik <madhuparnabhowmik04@gmail.com>");
