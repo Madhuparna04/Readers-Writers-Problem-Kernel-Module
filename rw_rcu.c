@@ -98,7 +98,7 @@ static int __init start_init(void){
 	two->data_item = 2;
 	three->data_item = 3;
 
-	//Adding thre entries to the list initially.
+	//Adding three entries to the list initially.
 	list_add_rcu(&one->rw_list,&rw_head);
 	list_add_rcu(&two->rw_list,&rw_head);
 	list_add_rcu(&three->rw_list,&rw_head);
