@@ -108,7 +108,7 @@ static int __init start_init(void){
 
 	t1 = kthread_create(reader,NULL,"reader1");
 	t2 = kthread_create(reader,NULL,"reader2");
-    t3 = kthread_create(writer,NULL,"writer1");
+	t3 = kthread_create(writer,NULL,"writer1");
 	t4 = kthread_create(writer,NULL,"writer2");
 
 	if(t1 && t2 && t3 && t4){
