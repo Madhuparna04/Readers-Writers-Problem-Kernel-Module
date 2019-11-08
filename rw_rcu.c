@@ -6,8 +6,6 @@
 #include <linux/spinlock.h>
 #include <linux/list.h>
 #include <linux/slab.h>
-#include <linux/semaphore.h>
-#include <linux/mutex.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Madhuparna Bhowmik <madhuparnabhowmik04@gmail.com>");
@@ -109,7 +107,6 @@ static int __init start_init(void)
 	list_add_rcu(&one->rw_list, &rw_head);
 	list_add_rcu(&two->rw_list, &rw_head);
 	list_add_rcu(&three->rw_list, &rw_head);
-
 
 	t1 = kthread_create(reader, NULL, "reader1");
 	t2 = kthread_create(reader, NULL, "reader2");
